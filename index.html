@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SurgViva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Surgery Viva Platform</p>
+          <h1>SurgViva</h1>
+        </div>
+      </header>
+
+      <main id="app" class="app-main">
+        <section id="home-screen" class="screen active" aria-label="Home screen">
+          <div class="hero-card">
+            <p class="hero-subtitle">Mobile-first viva workflow</p>
+            <h2>Conduct surgery viva smoothly</h2>
+            <p class="hero-copy">
+              Start with the examiner view to choose a subject and question, or open the student view to display the current question.
+            </p>
+            <div class="home-actions">
+              <button class="primary-btn" data-action="examiner">👨‍⚕️ Examiner</button>
+              <button class="secondary-btn" data-action="student">👨‍🎓 Student</button>
+              <button class="tertiary-btn" data-action="editor">✎ Edit Questions</button>
+            </div>
+
+            <div class="room-panel">
+              <label class="room-field">
+                <span>Shared room code</span>
+                <input id="room-code-input" type="text" maxlength="12" placeholder="Enter or create a code" />
+              </label>
+              <button id="connect-room-btn" class="tertiary-btn" type="button">Connect room</button>
+              <p id="room-status" class="room-status">Use the same code on both devices.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="examiner-screen" class="screen" aria-label="Examiner screen">
+          <div class="screen-toolbar">
+            <button class="ghost-btn" data-action="home">← Home</button>
+            <h2>Examiner</h2>
+          </div>
+
+          <div id="examiner-preview" class="examiner-preview" hidden></div>
+          <div id="examiner-subjects" class="subject-list"></div>
+          <div id="examiner-questions" class="question-list" hidden></div>
+        </section>
+
+        <section id="student-screen" class="screen" aria-label="Student screen">
+          <div class="screen-toolbar">
+            <button class="ghost-btn" data-action="home">← Home</button>
+            <h2>Student</h2>
+          </div>
+
+          <div id="student-display" class="student-display">
+            <p class="student-waiting">Waiting for examiner...</p>
+          </div>
+        </section>
+
+        <section id="editor-screen" class="screen" aria-label="Question editor screen">
+          <div class="screen-toolbar">
+            <button class="ghost-btn" data-action="home">← Home</button>
+            <h2>Question Editor</h2>
+          </div>
+
+          <form id="question-editor-form" class="editor-panel">
+            <p class="editor-help">
+              Edit the question bank directly in the browser. Changes are saved on this device for later use.
+            </p>
+
+            <label class="editor-field">
+              <span>Subject</span>
+              <select id="editor-subject"></select>
+            </label>
+
+            <label class="editor-field">
+              <span>Question</span>
+              <select id="editor-question"></select>
+            </label>
+
+            <label class="editor-field">
+              <span>Question ID</span>
+              <input id="editor-id" type="text" maxlength="8" required />
+            </label>
+
+            <label class="editor-field">
+              <span>Title</span>
+              <input id="editor-title" type="text" required />
+            </label>
+
+            <label class="editor-field">
+              <span>Display text</span>
+              <textarea id="editor-display" rows="6" required></textarea>
+            </label>
+
+            <div class="editor-actions">
+              <button type="submit" class="primary-btn">Save changes</button>
+              <button type="button" id="add-question" class="secondary-btn">Add new question</button>
+              <button type="button" id="delete-question" class="ghost-btn">Delete question</button>
+              <button type="button" id="reset-questions" class="ghost-btn">Reset defaults</button>
+            </div>
+
+            <p id="editor-status" class="editor-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-database-compat.js"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
