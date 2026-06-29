@@ -111,13 +111,23 @@ function connectToRoom() {
   setRoomStatus(`Connected to room ${roomCode}.`);
 
   roomRef.on('value', (snapshot) => {
-    const data = snapshot.val() || {};
-    if (data.subject && data.question) {
+    const data = snapshot.val();
+    console.log('Firebase room update:', roomCode, data);
+
+    if (data && data.subject && data.question) {
+      setRoomStatus(`Room ${roomCode} active — ${data.subject} ${data.question}`);
       currentSubject = questionBank.find((subject) => subject.name === data.subject) || null;
       currentQuestion = currentSubject?.questions.find((question) => question.id === data.question) || null;
       renderExaminerPreview();
       syncStudentView();
+      return;
     }
+
+    setRoomStatus(`Connected to room ${roomCode}. Waiting for examiner selection.`);
+    currentSubject = null;
+    currentQuestion = null;
+    renderExaminerPreview();
+    syncStudentView();
   }, (error) => {
     console.warn('Room subscription failed.', error);
     setRoomStatus('Unable to subscribe to room updates. Check Firebase access.');
@@ -137,9 +147,14 @@ function syncToRoom() {
     return;
   }
 
-  roomRef.set({
+  const payload = {
     subject: currentSubject.name,
     question: currentQuestion.id
+  };
+
+  console.log('Syncing room state:', roomCode, payload);
+  roomRef.set(payload).then(() => {
+    setRoomStatus(`Sent ${payload.subject} ${payload.question} to room ${roomCode}`);
   }).catch((error) => {
     console.warn('Failed to sync room state.', error);
     setRoomStatus('Unable to send question to room. Check Firebase access.');
