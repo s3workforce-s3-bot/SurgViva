@@ -32,6 +32,7 @@ const resetQuestionsButton = document.getElementById('reset-questions');
 const roomCodeInput = document.getElementById('room-code-input');
 const connectRoomButton = document.getElementById('connect-room-btn');
 const roomStatus = document.getElementById('room-status');
+const globalRoomStatus = document.getElementById('global-room-status');
 
 let currentSubject = null;
 let currentQuestion = null;
@@ -69,7 +70,13 @@ function persistQuestionBank() {
 }
 
 function setRoomStatus(message) {
-  roomStatus.textContent = message;
+  if (roomStatus) {
+    roomStatus.textContent = message;
+  }
+
+  if (globalRoomStatus) {
+    globalRoomStatus.textContent = message;
+  }
 }
 
 function initFirebase() {
@@ -508,3 +515,7 @@ renderExaminerPreview();
 renderStudentDisplay();
 renderQuestionEditor();
 showScreen('home-screen');
+
+if (roomCode) {
+  connectToRoom();
+}
