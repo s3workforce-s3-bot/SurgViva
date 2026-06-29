@@ -3,7 +3,7 @@ const ROOM_STORAGE_KEY = 'surgviva-room-code-v1';
 const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyDgXhR0ncdpk8IYlWfY6A3MKrR8j3f0M0A',
   authDomain: 'surgviva-demo.firebaseapp.com',
-  databaseURL: 'https://surgviva-demo-default-rtdb.firebaseio.com',
+  databaseURL: 'https://surgviva-demo-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'surgviva-demo',
   storageBucket: 'surgviva-demo.firebasestorage.app',
   messagingSenderId: '1234567890',
