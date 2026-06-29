@@ -118,7 +118,14 @@ function connectToRoom() {
       renderExaminerPreview();
       syncStudentView();
     }
+  }, (error) => {
+    console.warn('Room subscription failed.', error);
+    setRoomStatus('Unable to subscribe to room updates. Check Firebase access.');
   });
+
+  if (isExaminer && currentQuestion) {
+    syncToRoom();
+  }
 }
 
 function syncToRoom() {
@@ -126,9 +133,16 @@ function syncToRoom() {
     return;
   }
 
+  if (!currentSubject || !currentQuestion) {
+    return;
+  }
+
   roomRef.set({
-    subject: currentSubject?.name || null,
-    question: currentQuestion?.id || null
+    subject: currentSubject.name,
+    question: currentQuestion.id
+  }).catch((error) => {
+    console.warn('Failed to sync room state.', error);
+    setRoomStatus('Unable to send question to room. Check Firebase access.');
   });
 }
 
@@ -423,6 +437,8 @@ function resetQuestionBank() {
 }
 
 function handleAction(action) {
+  isExaminer = action === 'examiner';
+
   if (action === 'examiner') {
     currentSubject = null;
     currentQuestion = null;
@@ -432,6 +448,7 @@ function handleAction(action) {
   } else if (action === 'student') {
     showScreen('student-screen');
   } else if (action === 'editor') {
+    isExaminer = false;
     renderQuestionEditor();
     setEditorStatus('');
     showScreen('editor-screen');
