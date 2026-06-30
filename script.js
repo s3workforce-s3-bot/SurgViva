@@ -1,4 +1,6 @@
+const QUESTION_BANK_VERSION = 2;
 const STORAGE_KEY = 'surgviva-question-bank-v1';
+const STORAGE_VERSION_KEY = 'surgviva-question-bank-version-v1';
 const ROOM_STORAGE_KEY = 'surgviva-room-code-v1';
 const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyDgXhR0ncdpk8IYlWfY6A3MKrR8j3f0M0A',
@@ -53,13 +55,19 @@ function cloneQuestionBank(data) {
 }
 
 function loadQuestionBank() {
-  const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored) {
-    try {
-      return JSON.parse(stored);
-    } catch (error) {
-      console.warn('Unable to parse saved question bank.', error);
+  const savedVersion = Number(localStorage.getItem(STORAGE_VERSION_KEY));
+  if (savedVersion === QUESTION_BANK_VERSION) {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (error) {
+        console.warn('Unable to parse saved question bank.', error);
+      }
     }
+  } else {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem(STORAGE_VERSION_KEY, String(QUESTION_BANK_VERSION));
   }
 
   return cloneQuestionBank(SURG_VIVA_SUBJECTS);
@@ -67,6 +75,7 @@ function loadQuestionBank() {
 
 function persistQuestionBank() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(questionBank));
+  localStorage.setItem(STORAGE_VERSION_KEY, String(QUESTION_BANK_VERSION));
 }
 
 function setRoomStatus(message) {

@@ -2,67 +2,114 @@
 const SURG_VIVA_SUBJECTS = [
   {
     name: "Hernia",
-    description: "10 viva questions",
+    description: "24 viva questions",
     questions: [
       {
         id: "H01",
-        title: "Definition and Types",
-        display:
-          "Define a hernia and describe the common anatomical types encountered in surgical practice. Discuss the clinical relevance of each type."
+        title: "History summary",
+        display: "Present the history and give a summary of the history."
       },
       {
         id: "H02",
-        title: "Clinical Examination",
-        display:
-          "Describe the clinical examination of a patient presenting with an inguinal hernia. Discuss the findings you would elicit and differentiate clinically between direct and indirect inguinal hernias."
+        title: "General examination",
+        display: "What will you look for during the general examination?"
       },
       {
         id: "H03",
-        title: "Inguinal Hernia Anatomy",
+        title: "Palpation & diagnosis",
         display:
-          "Discuss the anatomy of the inguinal canal and explain how it relates to the development of inguinal hernias."
+          "Present your palpatory findings and give your provisional diagnosis."
       },
       {
         id: "H04",
-        title: "Femoral Hernia",
-        display:
-          "Compare femoral and inguinal hernias in terms of anatomy, presentation, and common complications."
+        title: "Predisposing factors",
+        display: "What are the predisposing factors of a hernia?"
       },
       {
         id: "H05",
         title: "Complications",
-        display:
-          "List the complications of an untreated hernia and explain the pathophysiology of incarceration and strangulation."
+        display: "What are the complications of a hernia?"
       },
       {
         id: "H06",
-        title: "Repair Principles",
-        display:
-          "Describe the principles of hernia repair and explain why mesh repair is commonly used in selected cases."
+        title: "Obstructed hernia",
+        display: "What are the symptoms of an obstructed hernia?"
       },
       {
         id: "H07",
-        title: "Recurrence",
-        display:
-          "Discuss the causes of recurrence after hernia surgery and outline measures that reduce the risk of recurrence."
+        title: "Strangulated hernia",
+        display: "What are the symptoms of a strangulated hernia?"
       },
       {
         id: "H08",
-        title: "Umbilical Hernia",
-        display:
-          "Describe the clinical features and management options for an umbilical hernia in adults and children."
+        title: "Hernia vs Hydrocele",
+        display: "How will you differentiate a hernia from a hydrocele?"
       },
       {
         id: "H09",
-        title: "Incisional Hernia",
+        title: "Direct vs Indirect",
         display:
-          "Explain the risk factors and prevention strategies for incisional hernias following laparotomy."
+          "How will you differentiate between a direct and an indirect inguinal hernia?"
       },
       {
         id: "H10",
-        title: "Emergency Presentation",
-        display:
-          "Discuss the presentation and immediate management of a strangulated hernia in the emergency setting."
+        title: "Femoral vs Inguinal",
+        display: "How will you differentiate between a femoral and an inguinal hernia?"
+      },
+      {
+        id: "H11",
+        title: "Enterocele vs Omentocele",
+        display: "How will you differentiate between an enterocele and an omentocele?"
+      },
+      {
+        id: "H12",
+        title: "Deep ring test",
+        display: "Describe the deep ring occlusion test."
+      },
+      {
+        id: "H13",
+        title: "Inguinal canal boundaries",
+        display: "What are the boundaries of the inguinal canal?"
+      },
+      {
+        id: "H14",
+        title: "Inguinal canal contents",
+        display: "What are the contents of the inguinal canal?"
+      },
+      {
+        id: "H15",
+        title: "Mid-inguinal point",
+        display: "What is the mid-inguinal point and what is its significance?"
+      },
+      {
+        id: "H16",
+        title: "Hesselbach's triangle",
+        display: "What are the boundaries of Hesselbach's triangle?"
+      },
+      {
+        id: "H17",
+        title: "Herniotomy",
+        display: "Describe herniotomy."
+      },
+      {
+        id: "H18",
+        title: "Herniorrhaphy",
+        display: "Describe herniorrhaphy."
+      },
+      {
+        id: "H19",
+        title: "Hernioplasty",
+        display: "Describe hernioplasty."
+      },
+      {
+        id: "H20",
+        title: "Treatment of strangulated hernia",
+        display: "How will you treat a strangulated hernia?"
+      },
+      {
+        id: "H21",
+        title: "Complications of hernioplasty",
+        display: "What are the complications of hernioplasty?"
       }
     ]
   },
