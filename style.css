@@ -38,6 +38,22 @@ button {
   margin-bottom: 16px;
 }
 
+.header-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.app-version {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
 .eyebrow {
   margin: 0 0 4px;
   text-transform: uppercase;
