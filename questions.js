@@ -181,67 +181,207 @@ const SURG_VIVA_SUBJECTS = [
   },
   {
     name: "Thyroid",
-    description: "10 viva questions",
+    description: "40 viva questions",
     questions: [
       {
         id: "T01",
-        title: "Thyroid Anatomy",
-        display:
-          "Discuss the anatomy of the thyroid gland and explain the surgical importance of its relations to the recurrent laryngeal nerves."
+        title: "History summary",
+        display: "Present the history and give a summary of the history."
       },
       {
         id: "T02",
-        title: "Goitre Examination",
-        display:
-          "Describe the clinical examination of a patient with goitre, including the features you would look for on inspection and palpation."
+        title: "General examination",
+        display: "What will you look for during the general examination?"
       },
       {
         id: "T03",
-        title: "Diffuse Goitre",
-        display:
-          "Discuss the causes and management of diffuse goitre, including thyroid function assessment."
+        title: "Palpation & diagnosis",
+        display: "Present your palpatory findings and give your provisional diagnosis."
       },
       {
         id: "T04",
-        title: "Nodular Goitre",
-        display:
-          "Explain the evaluation of a solitary thyroid nodule and the role of fine-needle aspiration cytology."
+        title: "Pressure effects",
+        display: "Name the pressure effects of thyroid swelling and their causes."
       },
       {
         id: "T05",
-        title: "Thyroid Cancer",
-        display:
-          "Describe the common types of thyroid cancer and explain how they differ clinically and histologically."
+        title: "Hyperthyroidism symptoms",
+        display: "What are the symptoms of hyperthyroidism?"
       },
       {
         id: "T06",
-        title: "Thyroidectomy",
-        display:
-          "Discuss the indications for thyroidectomy and the key steps in the operation."
+        title: "Swellings moving with deglutition",
+        display: "Name the swellings that move with deglutition."
       },
       {
         id: "T07",
-        title: "Complications of Thyroidectomy",
-        display:
-          "List the major complications of thyroidectomy and explain how they arise."
+        title: "Eye signs",
+        display: "Explain the pathophysiology of eye signs in thyroid disease."
       },
       {
         id: "T08",
-        title: "Parathyroid Relations",
-        display:
-          "Explain the relationship of the parathyroid glands to the thyroid and discuss why this is important during surgery."
+        title: "Retrosternal extension",
+        display: "What are the signs of retrosternal extension?"
       },
       {
         id: "T09",
-        title: "Retrosternal Goitre",
-        display:
-          "Discuss the clinical features and surgical concerns associated with a retrosternal goitre."
+        title: "Carotid pulse",
+        display: "What is the significance of examining the carotid pulse in thyroid disease?"
       },
       {
         id: "T10",
-        title: "Thyrotoxicosis",
-        display:
-          "Describe the clinical features of thyrotoxicosis and the preoperative preparation of a patient for thyroid surgery."
+        title: "Solitary thyroid nodule",
+        display: "What are the causes of a solitary thyroid nodule?"
+      },
+      {
+        id: "T11",
+        title: "Multinodular goitre",
+        display: "Explain the pathophysiology of multinodular goitre."
+      },
+      {
+        id: "T12",
+        title: "Primary thyrotoxicosis",
+        display: "What are the clinical features of primary thyrotoxicosis?"
+      },
+      {
+        id: "T13",
+        title: "Secondary thyrotoxicosis",
+        display: "What are the clinical features of secondary thyrotoxicosis?"
+      },
+      {
+        id: "T14",
+        title: "Graves' disease",
+        display: "Explain the pathophysiology of Graves' disease."
+      },
+      {
+        id: "T15",
+        title: "Thyroid tumor classification",
+        display: "Classify thyroid tumors."
+      },
+      {
+        id: "T16",
+        title: "STN investigations",
+        display: "What are the investigations for a solitary thyroid nodule?"
+      },
+      {
+        id: "T17",
+        title: "Toxic diffuse goitre investigations",
+        display: "What are the investigations for toxic diffuse goitre?"
+      },
+      {
+        id: "T18",
+        title: "USG uses",
+        display: "What are the uses of ultrasonography (USG) in thyroid disease?"
+      },
+      {
+        id: "T19",
+        title: "FNAC uses",
+        display: "What are the uses of FNAC in thyroid swellings?"
+      },
+      {
+        id: "T20",
+        title: "Radioiodine scan",
+        display: "What are the uses of a radioiodine scan?"
+      },
+      {
+        id: "T21",
+        title: "Spread of thyroid tumor",
+        display: "What are the modes of spread of thyroid tumors?"
+      },
+      {
+        id: "T22",
+        title: "Papillary carcinoma",
+        display: "What are the features of papillary carcinoma of the thyroid?"
+      },
+      {
+        id: "T23",
+        title: "Papillary FNAC",
+        display: "What are the FNAC features of papillary carcinoma?"
+      },
+      {
+        id: "T24",
+        title: "Follicular carcinoma",
+        display: "What are the features of follicular carcinoma of the thyroid?"
+      },
+      {
+        id: "T25",
+        title: "Follicular FNAC",
+        display: "What are the FNAC features of follicular carcinoma?"
+      },
+      {
+        id: "T26",
+        title: "Colloid goitre FNAC",
+        display: "What are the FNAC findings in colloid goitre?"
+      },
+      {
+        id: "T27",
+        title: "Thyroid surgeries",
+        display: "What are the different surgeries performed for thyroid swelling?"
+      },
+      {
+        id: "T28",
+        title: "Near-total thyroidectomy",
+        display: "Describe near-total thyroidectomy."
+      },
+      {
+        id: "T29",
+        title: "Hemithyroidectomy",
+        display: "Describe hemithyroidectomy."
+      },
+      {
+        id: "T30",
+        title: "Total thyroidectomy",
+        display: "Describe total thyroidectomy."
+      },
+      {
+        id: "T31",
+        title: "Subtotal thyroidectomy",
+        display: "Describe subtotal thyroidectomy."
+      },
+      {
+        id: "T32",
+        title: "Hypoparathyroidism symptoms",
+        display: "What are the symptoms of hypoparathyroidism?"
+      },
+      {
+        id: "T33",
+        title: "Thyroidectomy complications",
+        display: "What are the complications of thyroidectomy?"
+      },
+      {
+        id: "T34",
+        title: "Hypocalcaemia treatment",
+        display: "How will you treat hypocalcaemia after thyroidectomy?"
+      },
+      {
+        id: "T35",
+        title: "Papillary node management",
+        display: "How will you treat lymph node metastasis in papillary carcinoma of the thyroid?"
+      },
+      {
+        id: "T36",
+        title: "Post-op papillary carcinoma",
+        display: "What is the postoperative treatment of papillary carcinoma of the thyroid?"
+      },
+      {
+        id: "T37",
+        title: "Graves' treatment",
+        display: "What are the treatment options for Graves' disease?"
+      },
+      {
+        id: "T38",
+        title: "MNG treatment",
+        display: "How will you treat multinodular goitre?"
+      },
+      {
+        id: "T39",
+        title: "Pre-op thyroidectomy",
+        display: "What is the preoperative evaluation before thyroidectomy?"
+      },
+      {
+        id: "T40",
+        title: "Bilateral RLN injury",
+        display: "What happens when both recurrent laryngeal nerves are injured?"
       }
     ]
   }
