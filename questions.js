@@ -115,67 +115,167 @@ const SURG_VIVA_SUBJECTS = [
   },
   {
     name: "Breast",
-    description: "10 viva questions",
+    description: "32 viva questions",
     questions: [
       {
         id: "B01",
-        title: "Breast Anatomy",
-        display:
-          "Discuss the anatomical features of the breast and explain their surgical significance in breast disease."
+        title: "History summary",
+        display: "Present the history and give a summary of the history."
       },
       {
         id: "B02",
-        title: "Breast Examination",
-        display:
-          "Describe the clinical examination of a breast lump, including inspection, palpation, and assessment of regional lymph nodes."
+        title: "General examination",
+        display: "What will you look for during the general examination?"
       },
       {
         id: "B03",
-        title: "Fibroadenoma",
-        display:
-          "Discuss the clinical features and management of fibroadenoma in a young woman."
+        title: "Palpation & diagnosis",
+        display: "Present your palpatory findings and give your provisional diagnosis."
       },
       {
         id: "B04",
-        title: "Fibrocystic Disease",
-        display:
-          "Explain the presentation and management of fibrocystic breast disease and how it is differentiated from malignancy."
+        title: "Recent nipple retraction",
+        display: "What are the causes of recent onset nipple retraction?"
       },
       {
         id: "B05",
-        title: "Breast Cancer Screening",
-        display:
-          "Discuss the principles of screening for breast cancer and the role of mammography in different age groups."
+        title: "Nipple discharge",
+        display: "What are the types of nipple discharge and their causes?"
       },
       {
         id: "B06",
-        title: "Paget Disease",
-        display:
-          "Describe the clinical presentation and significance of Paget disease of the breast."
+        title: "Risk factors",
+        display: "What are the risk factors for carcinoma breast?"
       },
       {
         id: "B07",
-        title: "Mastectomy Types",
-        display:
-          "Compare simple mastectomy, modified radical mastectomy, and breast-conserving surgery."
+        title: "Breast cancer genes",
+        display: "Which genes are involved in breast carcinoma?"
       },
       {
         id: "B08",
-        title: "Axillary Nodes",
-        display:
-          "Explain the importance of axillary lymph node assessment in breast cancer and the role of sentinel node biopsy."
+        title: "Malignant breast swelling",
+        display: "What are the features of a malignant breast swelling?"
       },
       {
         id: "B09",
-        title: "Nipple Discharge",
-        display:
-          "Discuss the causes of nipple discharge and the diagnostic approach to a patient with this presentation."
+        title: "Nipple retraction anatomy",
+        display: "Involvement of which anatomical structure causes nipple retraction?"
       },
       {
         id: "B10",
-        title: "Breast Abscess",
-        display:
-          "Describe the presentation, diagnosis, and treatment of a lactational breast abscess."
+        title: "Skin tethering",
+        display: "Involvement of which anatomical structure causes skin tethering (dimpling)?"
+      },
+      {
+        id: "B11",
+        title: "Peau d'orange",
+        display: "Involvement of which anatomical structure causes peau d'orange appearance?"
+      },
+      {
+        id: "B12",
+        title: "Skin involvement",
+        display: "What is meant by skin involvement with regard to TNM staging?"
+      },
+      {
+        id: "B13",
+        title: "Chest wall involvement",
+        display: "What is meant by chest wall involvement with regard to TNM staging?"
+      },
+      {
+        id: "B14",
+        title: "Leaning forward",
+        display: "What is the significance of asking the patient to lean forward during breast examination?"
+      },
+      {
+        id: "B15",
+        title: "Axillary lymph nodes",
+        display: "What are the groups of axillary lymph nodes?"
+      },
+      {
+        id: "B16",
+        title: "Internal mammary nodes",
+        display: "How do you examine the internal mammary lymph nodes?"
+      },
+      {
+        id: "B17",
+        title: "Breast lump investigations",
+        display: "What are the investigations for a breast lump?"
+      },
+      {
+        id: "B18",
+        title: "Mammogram indications",
+        display: "What are the indications for mammography?"
+      },
+      {
+        id: "B19",
+        title: "Trucut biopsy",
+        display: "What are the uses of trucut biopsy?"
+      },
+      {
+        id: "B20",
+        title: "Metastasis workup",
+        display: "What are the investigations for metastasis in carcinoma breast?"
+      },
+      {
+        id: "B21",
+        title: "TNM staging",
+        display: "Describe the TNM staging of breast carcinoma."
+      },
+      {
+        id: "B22",
+        title: "Treatment options",
+        display: "What are the various treatment options for carcinoma breast?"
+      },
+      {
+        id: "B23",
+        title: "Hormone therapy",
+        display: "What are the indications for hormone therapy?"
+      },
+      {
+        id: "B24",
+        title: "MRM",
+        display: "Which structures are removed in a modified radical mastectomy?"
+      },
+      {
+        id: "B25",
+        title: "BCS indications",
+        display: "What are the indications for breast conservation surgery?"
+      },
+      {
+        id: "B26",
+        title: "BCS contraindications",
+        display: "What are the contraindications for breast conservation surgery?"
+      },
+      {
+        id: "B27",
+        title: "Neoadjuvant chemotherapy",
+        display: "What are the indications for neoadjuvant chemotherapy?"
+      },
+      {
+        id: "B28",
+        title: "Chemotherapy indications",
+        display: "What are the indications for chemotherapy?"
+      },
+      {
+        id: "B29",
+        title: "Chemotherapy drugs",
+        display: "Which drugs are commonly used in chemotherapy for breast carcinoma?"
+      },
+      {
+        id: "B30",
+        title: "Chemotherapy side effects",
+        display: "What are the side effects of chemotherapy?"
+      },
+      {
+        id: "B31",
+        title: "Radiotherapy indications",
+        display: "What are the indications for radiotherapy?"
+      },
+      {
+        id: "B32",
+        title: "Triple assessment",
+        display: "What is the triple assessment of carcinoma breast?"
       }
     ]
   },

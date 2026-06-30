@@ -1,4 +1,4 @@
-const QUESTION_BANK_VERSION = 3;
+const QUESTION_BANK_VERSION = 4;
 const STORAGE_KEY = 'surgviva-question-bank-v1';
 const STORAGE_VERSION_KEY = 'surgviva-question-bank-version-v1';
 const ROOM_STORAGE_KEY = 'surgviva-room-code-v1';
