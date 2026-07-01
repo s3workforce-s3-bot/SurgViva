@@ -37,7 +37,7 @@ const SURG_VIVA_SUBJECTS = [
       },
       {
         id: "H07",
-        title: "Strangulated hernia",
+        title: "Strangulated hernia features",
         display: "What are the symptoms of a strangulated hernia?"
       },
       {
