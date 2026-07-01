@@ -32,7 +32,7 @@ const SURG_VIVA_SUBJECTS = [
       },
       {
         id: "H06",
-        title: "Obstructed hernia",
+        title: "Obstructed hernia features",
         display: "What are the symptoms of an obstructed hernia?"
       },
       {
