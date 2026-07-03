@@ -696,5 +696,141 @@ const SURG_VIVA_SUBJECTS = [
         display: "What are the factors influencing graft take?"
       }
     ]
+  },
+  {
+    name: "Varicose Veins",
+    description: "26 viva questions",
+    questions: [
+      {
+        id: "V01",
+        title: "History summary",
+        display: "Present the history and give a summary of the history."
+      },
+      {
+        id: "V02",
+        title: "General examination",
+        display: "What will you look for during the general examination?"
+      },
+      {
+        id: "V03",
+        title: "Palpation & diagnosis",
+        display: "Present your palpatory findings and give your provisional diagnosis."
+      },
+      {
+        id: "V04",
+        title: "Primary varicose veins",
+        display: "What is meant by primary varicose veins?"
+      },
+      {
+        id: "V05",
+        title: "Secondary varicose veins",
+        display: "What are the causes of secondary varicose veins?"
+      },
+      {
+        id: "V06",
+        title: "Claudication",
+        display: "How will you differentiate between venous, arterial, and neurogenic claudication?"
+      },
+      {
+        id: "V07",
+        title: "Long vs short saphenous",
+        display: "Based on the anatomical location of varicosities, how will you determine whether the long saphenous or short saphenous system is involved?"
+      },
+      {
+        id: "V08",
+        title: "Lipodermatosclerosis",
+        display: "Define lipodermatosclerosis."
+      },
+      {
+        id: "V09",
+        title: "Venous ulcer",
+        display: "Describe the clinical features of a classical venous ulcer."
+      },
+      {
+        id: "V10",
+        title: "Trendelenburg test",
+        display: "Describe the Trendelenburg test and explain its clinical significance."
+      },
+      {
+        id: "V11",
+        title: "Multiple tourniquet test",
+        display: "Describe the multiple tourniquet test and its purpose."
+      },
+      {
+        id: "V12",
+        title: "Modified Perthes test",
+        display: "Describe the modified Perthes test and other clinical tests used to assess the deep venous system."
+      },
+      {
+        id: "V13",
+        title: "Fegan & Schwartz tests",
+        display: "Describe Fegan's test and Schwartz test in the evaluation of varicose veins."
+      },
+      {
+        id: "V14",
+        title: "Clinical tests",
+        display: "What are the clinical tests performed in varicose veins, and which venous system does each test assess?"
+      },
+      {
+        id: "V15",
+        title: "CEAP classification",
+        display: "Describe the CEAP classification of chronic venous disease."
+      },
+      {
+        id: "V16",
+        title: "Bisgaard regimen",
+        display: "What is the Bisgaard regimen in the management of venous ulcers?"
+      },
+      {
+        id: "V17",
+        title: "Conservative treatment",
+        display: "What are the indications for conservative treatment in varicose veins?"
+      },
+      {
+        id: "V18",
+        title: "Compression therapy",
+        display: "Explain the role of compression therapy in varicose veins."
+      },
+      {
+        id: "V19",
+        title: "Surgical treatment",
+        display: "What are the indications for surgical treatment in varicose veins?"
+      },
+      {
+        id: "V20",
+        title: "SFJ ligation & stripping",
+        display: "Describe the basic steps of saphenofemoral junction ligation and great saphenous vein removal."
+      },
+      {
+        id: "V21",
+        title: "Minimally invasive treatment",
+        display: "What are the minimally invasive treatment options available for varicose veins?"
+      },
+      {
+        id: "V22",
+        title: "Injection sclerotherapy",
+        display: "Describe injection sclerotherapy and list the commonly used sclerosant agents."
+      },
+      {
+        id: "V23",
+        title: "Surgery complications",
+        display: "What are the complications of varicose vein surgery?"
+      },
+      {
+        id: "V24",
+        title: "Acute DVT",
+        display: "How do you clinically recognize acute deep vein thrombosis (DVT)?"
+      },
+      {
+        id: "V25",
+        title: "DVT risk factors",
+        display: "What are the predisposing factors for deep vein thrombosis?"
+      },
+      {
+        id: "V26",
+        title: "DVT management",
+        display: "Outline the steps in the management of deep vein thrombosis."
+      }
+    ]
   }
 ];
