@@ -484,5 +484,217 @@ const SURG_VIVA_SUBJECTS = [
         display: "What happens when both recurrent laryngeal nerves are injured?"
       }
     ]
+  },
+  {
+    name: "Swelling",
+    description: "14 viva questions",
+    questions: [
+      {
+        id: "S01",
+        title: "Brief history & palpation",
+        display: "Present a very brief history and the local examination (palpation findings)."
+      },
+      {
+        id: "S02",
+        title: "Diagnosis & reasons",
+        display: "What is your diagnosis, and what are the reasons for your diagnosis?"
+      },
+      {
+        id: "S03",
+        title: "Definition",
+        display: "What is a lipoma?"
+      },
+      {
+        id: "S04",
+        title: "Subcutaneous swellings",
+        display: "Name some common subcutaneous swellings."
+      },
+      {
+        id: "S05",
+        title: "Plane of swelling",
+        display: "How will you identify the plane of a swelling?"
+      },
+      {
+        id: "S06",
+        title: "Pulsations",
+        display: "What are the various types of pulsations you may encounter in a swelling?"
+      },
+      {
+        id: "S07",
+        title: "Compressibility vs Reducibility",
+        display: "What is the difference between compressibility and reducibility of a swelling?"
+      },
+      {
+        id: "S08",
+        title: "Complications",
+        display: "What are the complications of a lipoma?"
+      },
+      {
+        id: "S09",
+        title: "Locations of lipoma",
+        display: "What are the common and deep locations of lipomas?"
+      },
+      {
+        id: "S10",
+        title: "Dangerous locations",
+        display: "Name some locations where lipomas are dangerous due to the risk of malignancy."
+      },
+      {
+        id: "S11",
+        title: "Investigation",
+        display: "If there is a doubt in the diagnosis of a lipoma, what investigation will help?"
+      },
+      {
+        id: "S12",
+        title: "Excision",
+        display: "How will you excise a subcutaneous lipoma?"
+      },
+      {
+        id: "S13",
+        title: "LA with adrenaline",
+        display: "What are the advantages of using local anesthesia with adrenaline?"
+      },
+      {
+        id: "S14",
+        title: "Contraindications to adrenaline",
+        display: "Where should adrenaline not be used?"
+      }
+    ]
+  },
+  {
+    name: "Ulcer",
+    description: "26 viva questions",
+    questions: [
+      {
+        id: "U01",
+        title: "Brief history & palpation",
+        display: "Present a very brief history and the local examination (palpation findings)."
+      },
+      {
+        id: "U02",
+        title: "Diagnosis & reasons",
+        display: "What is your diagnosis, and what are the reasons for your diagnosis?"
+      },
+      {
+        id: "U03",
+        title: "Definition",
+        display: "What is an ulcer?"
+      },
+      {
+        id: "U04",
+        title: "Parts of ulcer",
+        display: "What are the parts of an ulcer?"
+      },
+      {
+        id: "U05",
+        title: "Causes of non-healing ulcer",
+        display: "What are the causes of a non-healing ulcer? Classify them into local, regional, systemic causes, and specific ulcers."
+      },
+      {
+        id: "U06",
+        title: "Marjolin's ulcer",
+        display: "What is Marjolin's ulcer?"
+      },
+      {
+        id: "U07",
+        title: "Malignant ulcers",
+        display: "Name the malignant ulcers."
+      },
+      {
+        id: "U08",
+        title: "Features of malignant ulcer",
+        display: "What are the clinical features of a malignant ulcer?"
+      },
+      {
+        id: "U09",
+        title: "Diagnosis of malignant ulcer",
+        display: "How will you confirm the diagnosis of a malignant ulcer?"
+      },
+      {
+        id: "U10",
+        title: "Biopsy from edge",
+        display: "Why is the biopsy taken from the edge of a malignant ulcer?"
+      },
+      {
+        id: "U11",
+        title: "Basal cell carcinoma",
+        display: "What are the clinical features of basal cell carcinoma?"
+      },
+      {
+        id: "U12",
+        title: "BCC sites",
+        display: "What are the common sites of basal cell carcinoma?"
+      },
+      {
+        id: "U13",
+        title: "BCC spread",
+        display: "What is the typical pattern of spread of basal cell carcinoma?"
+      },
+      {
+        id: "U14",
+        title: "BCC treatment",
+        display: "How is basal cell carcinoma treated?"
+      },
+      {
+        id: "U15",
+        title: "Squamous cell carcinoma",
+        display: "What are the clinical features of squamous cell carcinoma?"
+      },
+      {
+        id: "U16",
+        title: "SCC risk factors",
+        display: "What are the risk factors for squamous cell carcinoma?"
+      },
+      {
+        id: "U17",
+        title: "SCC spread",
+        display: "How does squamous cell carcinoma spread?"
+      },
+      {
+        id: "U18",
+        title: "SCC treatment",
+        display: "What is the treatment of squamous cell carcinoma?"
+      },
+      {
+        id: "U19",
+        title: "Malignant melanoma",
+        display: "What are the clinical features of malignant melanoma?"
+      },
+      {
+        id: "U20",
+        title: "Melanoma types",
+        display: "What are the types of malignant melanoma?"
+      },
+      {
+        id: "U21",
+        title: "Melanoma spread",
+        display: "How does malignant melanoma spread?"
+      },
+      {
+        id: "U22",
+        title: "Melanoma treatment",
+        display: "What is the treatment of malignant melanoma?"
+      },
+      {
+        id: "U23",
+        title: "Dirty wound",
+        display: "How will you manage a dirty wound?"
+      },
+      {
+        id: "U24",
+        title: "Raw area cover",
+        display: "What are the methods available to cover a raw area?"
+      },
+      {
+        id: "U25",
+        title: "Skin grafts",
+        display: "What are the types of skin grafts?"
+      },
+      {
+        id: "U26",
+        title: "Graft take",
+        display: "What are the factors influencing graft take?"
+      }
+    ]
   }
 ];
