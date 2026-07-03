@@ -832,5 +832,66 @@ const SURG_VIVA_SUBJECTS = [
         display: "Outline the steps in the management of deep vein thrombosis."
       }
     ]
+  },
+  {
+    name: "Hydrocele",
+    description: "11 viva questions",
+    questions: [
+      {
+        id: "Hy01",
+        title: "Brief history & palpation",
+        display: "Present a very brief history and the local examination (palpation findings)."
+      },
+      {
+        id: "Hy02",
+        title: "Diagnosis & reasons",
+        display: "What is your diagnosis, and what are the reasons for your diagnosis?"
+      },
+      {
+        id: "Hy03",
+        title: "Clinical features",
+        display: "What are the clinical features of a hydrocele?"
+      },
+      {
+        id: "Hy04",
+        title: "Purely scrotal swellings",
+        display: "What are the differential diagnoses of purely scrotal swellings?"
+      },
+      {
+        id: "Hy05",
+        title: "Hernia vs Hydrocele",
+        display: "How will you differentiate a hernia from a hydrocele?"
+      },
+      {
+        id: "Hy06",
+        title: "Types of hydrocele",
+        display: "What are the types of hydrocele?"
+      },
+      {
+        id: "Hy07",
+        title: "Layers of scrotum",
+        display: "Name the layers of the scrotum."
+      },
+      {
+        id: "Hy08",
+        title: "Transillumination test",
+        display: "Describe the transillumination test and its significance."
+      },
+      {
+        id: "Hy09",
+        title: "Diagnosis",
+        display: "How will you diagnose a hydrocele?"
+      },
+      {
+        id: "Hy10",
+        title: "Surgery",
+        display: "What are the surgical treatment options for hydrocele?"
+      },
+      {
+        id: "Hy11",
+        title: "Jaboulay's procedure",
+        display: "What is the principle of Jaboulay's procedure?"
+      }
+    ]
   }
 ];
